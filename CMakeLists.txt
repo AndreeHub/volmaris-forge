@@ -31,10 +31,11 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets OpenGL OpenGLWidgets)
 qt_standard_project_setup()
 
 # --------------------------------------------------------------------------
-# Third-party deps (vcpkg manifest pulls these in)
+# Third-party deps
 # --------------------------------------------------------------------------
-find_package(Boost REQUIRED)
-find_package(unofficial-sqlite3 CONFIG REQUIRED)
+# Boost.Geometry and SQLite are installed by the vcpkg manifest but are not
+# consumed by any target in Phase 0. They will be wired up by the modules
+# that need them (core/spatial -> Boost.Geometry, io -> SQLite) in Phase 1.
 
 # --------------------------------------------------------------------------
 # Warnings

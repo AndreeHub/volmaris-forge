@@ -5,6 +5,7 @@
   "description": "Open-source 2D HVAC schematic editor (Qt 6 + OpenGL).",
   "homepage": "https://github.com/",
   "license": "GPL-3.0-or-later",
+  "builtin-baseline": "d015e31e90838a4c9dfa3eed45979bc70d9357fc",
   "dependencies": [
     {
       "name": "qtbase",
