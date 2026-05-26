@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "volmaris-forge",
+  "version-string": "0.0.1",
+  "description": "Open-source 2D HVAC schematic editor (Qt 6 + OpenGL).",
+  "homepage": "https://github.com/",
+  "license": "GPL-3.0-or-later",
+  "dependencies": [
+    {
+      "name": "qtbase",
+      "default-features": false,
+      "features": [
+        "gui",
+        "widgets",
+        "opengl",
+        "opengl-desktop"
+      ]
+    },
+    "boost-geometry",
+    "sqlite3",
+    "gtest"
+  ]
+}
